@@ -3,11 +3,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
     <head th:replace="layout/plantilla :: head">
-        <title>Arboles</title>
+        <title>TODO supply a title</title>
         
     </head>
     <body>
        <header th:replace="layout/plantilla :: header"></header>
+       
+       <section th:replace="arbol/fragmentos :: botonesAgregar" />
+       <section th:replace="arbol/fragmentos :: agregarsArbol" />
+       <section th:replace="arbol/fragmentos :: listadoArbol" />
        
        <footer th:replace="layout/plantilla :: footer"> </footer>
     </body>
