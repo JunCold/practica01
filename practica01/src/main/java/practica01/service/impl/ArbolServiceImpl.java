@@ -21,4 +21,21 @@ public class ArbolServiceImpl implements ArbolService{
         return arbolDao.findAll();
         
     }
+
+    @Transactional
+    @Override
+    public void save(Arbol arbol) {
+        arbolDao.save(arbol);
+    }
+    
+    @Transactional
+    @Override
+    public void delete(Arbol arbol) {
+        arbolDao.delete(arbol);
+    }
+
+    @Override
+    public Arbol getArbol(Arbol arbol) {
+        return arbol;
+    }
 }
